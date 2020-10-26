@@ -1,13 +1,12 @@
-'use strict';
+<template>
+{{{template}}}
+</template>
 
-import React, { Component } from 'react';
+<script>
+{{{mockDataScript}}}
+{{{script}}}
+</script>
 
-{{{imports}}}
-
-{{{utils}}}
-
+<style scoped>
 {{{style}}}
-
-{{{classes}}}
-
-{{{exports}}}
+</style>
