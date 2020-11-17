@@ -16,8 +16,8 @@ const vm = new NodeVM({
 co(function*() {
   const xtplRender = thunkify(xtpl.render);
   const code = fs.readFileSync(
-    path.resolve(__dirname, '../src/index.js'),
-    'utf8'
+      path.resolve(__dirname, '../src/index.js'),
+      'utf8'
   );
   const renderInfo = vm.run(code)(data, {
     prettier: prettier,
@@ -40,9 +40,9 @@ co(function*() {
   } else {
     const renderData = renderInfo.renderData;
     const ret = yield xtplRender(
-      path.resolve(__dirname, '../src/template.xtpl'),
-      renderData,
-      {}
+        path.resolve(__dirname, '../src/template.xtpl'),
+        renderData,
+        {}
     );
 
     const prettierOpt = renderInfo.prettierOpt || {
