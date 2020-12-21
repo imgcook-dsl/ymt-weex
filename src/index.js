@@ -118,7 +118,7 @@ module.exports = function(schema, option) {
           value = (parseInt(value) / _w).toFixed(2);
           value = value == 0 ? value : value + 'vw';
         } else if (toUPX) {
-          value = parseInt(value).toFixed(2);
+          value = parseInt(value).toFixed(2)*2;
           value = value == 0 ? value : value + 'px';
         } else if (toREM && htmlFontsize) {
           const valueNum = typeof value == 'string' ? value.replace(/(px)|(rem)/, '') : value;
