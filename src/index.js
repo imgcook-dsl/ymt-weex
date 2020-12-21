@@ -126,7 +126,7 @@ module.exports = function(schema, option) {
           value = parseFloat((fontSize / htmlFontsize).toFixed(2));
           value =  value ? `${value}rem` : value;
         } else {
-          value = parseInt(value).toFixed(2);
+          value = parseInt(value).toFixed(2)*2;
           value = value == 0 ? value : value + 'px';
         }
         styleData.push(`${_.kebabCase(key)}: ${value}`);
