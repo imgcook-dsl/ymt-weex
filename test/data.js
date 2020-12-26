@@ -1,5 +1,5 @@
 const data ={
-  "artboardImg": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/09d9ad50412811eb818bcffad23e89ce.png",
+  "artboardImg": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cf4a9180412811eb937eeb1e7a6075db.png",
   "rect": {
     "x": 0,
     "y": 0,
@@ -8,9 +8,9 @@ const data ={
   },
   "pluginVersion": "2.3.2",
   "componentName": "Block",
-  "name": "我的持仓",
+  "name": "持仓详情",
   "reference": "sketch",
-  "restore_id": "f61655c7-3854-4311-b379-5083e1ad6778",
+  "restore_id": "34cb383e-1cf3-4764-9fac-7bfd3c017dc4",
   "props": {
     "style": {
       "width": "375px",
@@ -18,15 +18,14 @@ const data ={
     },
     "className": "mod"
   },
-  "id": "0f6dbf40-4128-11eb-9de5-3d78cb93be37",
+  "id": "d2f5e640-4128-11eb-ac8e-638777ab753e",
   "children": [{
     "componentName": "Div",
-    "id": "0f6f45e7-4128-11eb-9de5-3d78cb93be37",
+    "id": "d2f68287-4128-11eb-ac8e-638777ab753e",
     "props": {
       "style": {
         "display": "flex",
-        "position": "relative",
-        "alignItems": "flex-start",
+        "alignItems": "center",
         "flexDirection": "column",
         "backgroundColor": "#F2F2F2",
         "width": "375px",
@@ -41,19 +40,24 @@ const data ={
       "width": 375,
       "height": 812
     },
-    "selfId": "7A581F87-1235-4519-934A-B99449EA654C",
+    "selfId": "1B313A11-1F6B-439E-B992-87066DF9E8A0",
     "children": [{
       "componentName": "Div",
-      "id": "0f6f45e6-4128-11eb-9de5-3d78cb93be37",
+      "id": "d2f68283-4128-11eb-ac8e-638777ab753e",
       "props": {
         "style": {
+          "boxSizing": "border-box",
           "display": "flex",
           "position": "relative",
-          "alignItems": "flex-start",
-          "flexDirection": "column",
-          "backgroundImage": "linear-gradient(180deg, #07A6F0 46%, rgba(6,175,249,0.00) 100%)",
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "backgroundColor": "#FFFFFF",
+          "paddingRight": "14px",
+          "paddingLeft": "33px",
           "width": "375px",
-          "height": "166px"
+          "height": "44px",
+          "overflow": "hidden"
         },
         "className": "hd"
       },
@@ -61,826 +65,604 @@ const data ={
         "x": 0,
         "y": 0,
         "width": 375,
-        "height": 166
+        "height": 44
       },
-      "selfId": "4AE7FE13-B0E2-46D8-88B5-B394DA68BF21",
+      "selfId": "152C1A09-36C7-4D63-830D-386032A3C48F",
       "children": [{
-        "componentName": "Div",
-        "id": "0f6f45e3-4128-11eb-9de5-3d78cb93be37",
+        "componentName": "Image",
+        "id": "d2f65b7a-4128-11eb-ac8e-638777ab753e",
         "props": {
           "style": {
-            "boxSizing": "border-box",
-            "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "paddingRight": "14px",
-            "paddingLeft": "33px",
-            "width": "375px",
-            "height": "44px",
-            "overflow": "hidden"
+            "width": "29px",
+            "height": "12px"
           },
-          "className": "block"
+          "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ce58b770412811ebb3b9a38faca3ed5e.png",
+          "className": "icon"
         },
         "rect": {
-          "x": 0,
-          "y": 0,
-          "width": 375,
-          "height": 44
+          "x": 33,
+          "y": 17,
+          "width": 29,
+          "height": 12
         },
-        "selfId": "7718E5E0-EADD-4B5B-9304-33F7A6AC6564",
+        "selfId": "75217355-56D4-48DC-851E-861E98466D7C"
+      }, {
+        "componentName": "Div",
+        "id": "e5bfa400-f904-472f-b28b-e0247f8c6e59",
+        "props": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "width": "68px",
+            "height": "12px"
+          },
+          "className": "normal_div"
+        },
+        "rect": {
+          "x": 293,
+          "y": 17,
+          "width": 68,
+          "height": 12
+        },
         "children": [{
           "componentName": "Image",
-          "id": "0f6f1ed2-4128-11eb-9de5-3d78cb93be37",
+          "id": "d2f65b7b-4128-11eb-ac8e-638777ab753e",
           "props": {
             "style": {
-              "width": "29px",
+              "marginRight": "4px",
+              "width": "18px",
               "height": "12px"
             },
-            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/780eadd0412711eb894ee599727c55f9.png",
-            "className": "icon"
-          },
-          "rect": {
-            "x": 33,
-            "y": 17,
-            "width": 29,
-            "height": 12
-          },
-          "selfId": "EF34A215-2866-485B-A499-E590E0B7E922"
-        }, {
-          "componentName": "Div",
-          "id": "d9a06453-17bb-4487-b2e6-4218a9e3500b",
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "center",
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "width": "68px",
-              "height": "12px"
-            },
-            "className": "group"
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ce3a5a00412811eb86dead963a2b34d6.png",
+            "className": "icon_1"
           },
           "rect": {
             "x": 293,
             "y": 17,
-            "width": 68,
+            "width": 18,
+            "height": 12
+          },
+          "selfId": "CA29BAC1-0A73-423D-8AE2-4E547B43B77B"
+        }, {
+          "componentName": "Image",
+          "id": "d2f65b7c-4128-11eb-ac8e-638777ab753e",
+          "props": {
+            "style": {
+              "marginRight": "5px",
+              "width": "16px",
+              "height": "12px"
+            },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ce1b8760412811ebb7a0db033ae5beeb.png",
+            "className": "icon_2"
+          },
+          "rect": {
+            "x": 315,
+            "y": 17,
+            "width": 16,
+            "height": 12
+          },
+          "selfId": "0DE2D0DB-9304-49B3-B63C-481D340C0580"
+        }, {
+          "componentName": "Div",
+          "id": "37095229-789b-4418-9ec9-5b8c372f60af",
+          "props": {
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginRight": "1px",
+              "width": "22px",
+              "height": "12px"
+            },
+            "className": "block"
+          },
+          "rect": {
+            "x": 336,
+            "y": 17,
+            "width": 22,
             "height": 12
           },
           "children": [{
             "componentName": "Image",
-            "id": "0f6f1ed3-4128-11eb-9de5-3d78cb93be37",
+            "id": "d2f68282-4128-11eb-ac8e-638777ab753e",
             "props": {
               "style": {
-                "marginRight": "4px",
-                "width": "18px",
-                "height": "12px"
-              },
-              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/77da0940412711eb85fc971026c20990.png",
-              "className": "icon_1"
-            },
-            "rect": {
-              "x": 293,
-              "y": 17,
-              "width": 18,
-              "height": 12
-            },
-            "selfId": "C7B9A9AC-C580-49DC-A025-C64CB0DDB8BE"
-          }, {
-            "componentName": "Image",
-            "id": "0f6f1ed4-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "marginRight": "5px",
-                "width": "16px",
-                "height": "12px"
-              },
-              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/77bb0f90412711eba762692959aa6713.png",
-              "className": "icon_2"
-            },
-            "rect": {
-              "x": 315,
-              "y": 17,
-              "width": 16,
-              "height": 12
-            },
-            "selfId": "133F1174-88D5-4AE0-8BAD-DAF4DF4B901E"
-          }, {
-            "componentName": "Image",
-            "selfId": "E39EEBFE-6A9E-46D6-9FD3-ACE7198D1564",
-            "id": "0f6f45e2-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "src": "https://img.alicdn.com/imgextra/i2/O1CN01rmrE2a1MtpyGQJdqZ_!!6000000001493-2-tps-44-24.png",
-              "style": {
-                "marginRight": "1px",
+                "position": "absolute",
+                "top": "0px",
+                "left": "0px",
                 "width": "22px",
                 "height": "12px"
               },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cdb7bc80412811ebbcb6d5de6b3a4c31.png",
               "className": "icon_3"
             },
             "rect": {
-              "y": 17,
               "x": 336,
-              "height": 12,
-              "width": 22
-            }
+              "y": 17,
+              "width": 22,
+              "height": 12
+            },
+            "selfId": "20553C7E-AE82-4F99-9311-63D52DF3042D"
           }, {
             "componentName": "Image",
-            "id": "0f6f45e1-4128-11eb-9de5-3d78cb93be37",
+            "id": "d2f68280-4128-11eb-ac8e-638777ab753e",
             "props": {
               "style": {
-                "width": "2px",
-                "height": "4px"
+                "position": "relative",
+                "width": "18px",
+                "height": "8px"
               },
-              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/77779df0412711eb8e9843f061dc50ec.png",
-              "className": "dot"
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cdfdc630412811eb85bad57ee38646c0.png",
+              "className": "play"
             },
             "rect": {
-              "x": 359,
-              "y": 21,
-              "width": 2,
-              "height": 4
+              "x": 338,
+              "y": 19,
+              "width": 18,
+              "height": 8
             },
-            "selfId": "7C39606D-8619-4F18-A7C0-CE3AA30A59E2"
-          }]
-        }]
-      }, {
-        "componentName": "Div",
-        "id": "a355314b-af4e-4a6c-b1eb-3fd97a6356cc",
-        "props": {
-          "style": {
-            "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "marginTop": "11px",
-            "marginLeft": "20px",
-            "width": "204px",
-            "height": "25px"
-          },
-          "className": "block_1"
-        },
-        "rect": {
-          "x": 20,
-          "y": 55,
-          "width": 204,
-          "height": 25
-        },
-        "children": [{
-          "componentName": "Image",
-          "id": "0f6f45e4-4128-11eb-9de5-3d78cb93be37",
-          "props": {
-            "style": {
-              "width": "16px",
-              "height": "16px"
-            },
-            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/7842b620412711ebab8229b761bcab29.png",
-            "className": "left"
-          },
-          "rect": {
-            "x": 20,
-            "y": 60,
-            "width": 16,
-            "height": 16
-          },
-          "selfId": "BB9D894C-3553-4596-A3AD-8528D0D0FA46",
-          "smart": {
-            "nodeIdentification": {
-              "fieldBind": ["left"]
-            },
-            "nodeCustom": {
-              "fieldBind": {
-                "confidential": 0.9339246153831482,
-                "isConfident": true,
-                "label": "left",
-                "type": "fieldBind"
-              }
-            },
-            "layerProtocol": {
-              "field": {
-                "type": "left"
+            "selfId": "B9B48DBC-7D49-4A5C-8480-9566E0A3076B",
+            "smart": {
+              "nodeIdentification": {
+                "fieldBind": ["play"]
+              },
+              "nodeCustom": {
+                "fieldBind": {
+                  "confidential": 0.6123356819152832,
+                  "isConfident": true,
+                  "label": "play",
+                  "type": "fieldBind"
+                }
+              },
+              "layerProtocol": {
+                "field": {
+                  "type": "play"
+                }
               }
             }
-          }
+          }]
         }, {
-          "componentName": "Text",
-          "id": "0f6f45e5-4128-11eb-9de5-3d78cb93be37",
+          "componentName": "Image",
+          "id": "d2f68281-4128-11eb-ac8e-638777ab753e",
           "props": {
             "style": {
-              "lineHeight": "25px",
-              "whiteSpace": "nowrap",
-              "color": "#ffffff",
-              "fontSize": "18px",
-              "fontWeight": 600
+              "width": "2px",
+              "height": "4px"
             },
-            "text": "我的持仓",
-            "lines": 1,
-            "className": "txt"
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cddcd0b0412811eb85f0c37584a3fcd8.png",
+            "className": "dot"
           },
           "rect": {
-            "x": 152,
-            "y": 55,
-            "width": 72,
-            "height": 25
+            "x": 359,
+            "y": 21,
+            "width": 2,
+            "height": 4
           },
-          "selfId": "C4A41AAB-FD87-4D6E-8ECA-31E8FB9BDF370"
+          "selfId": "340B553A-4F65-4B45-8156-653CE7B0DEDA"
         }]
       }]
     }, {
       "componentName": "Div",
-      "id": "0f6f1ed1-4128-11eb-9de5-3d78cb93be37",
+      "id": "d2f68286-4128-11eb-ac8e-638777ab753e",
       "props": {
         "style": {
           "display": "flex",
-          "position": "absolute",
-          "top": "98px",
+          "position": "relative",
           "alignItems": "center",
-          "alignSelf": "center",
-          "flexDirection": "column",
+          "flexDirection": "row",
+          "backgroundColor": "#FFFFFF",
+          "width": "375px",
+          "height": "46px"
+        },
+        "className": "bd"
+      },
+      "rect": {
+        "x": 0,
+        "y": 44,
+        "width": 375,
+        "height": 46
+      },
+      "selfId": "75109AF1-80A8-4BA7-B1E2-C23402698F6B",
+      "children": [{
+        "componentName": "Image",
+        "id": "d2f68284-4128-11eb-ac8e-638777ab753e",
+        "props": {
+          "style": {
+            "marginRight": "116px",
+            "marginLeft": "20px",
+            "width": "16px",
+            "height": "16px"
+          },
+          "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cd91e500412811eb800a3d3b7ce76349.png",
+          "className": "left"
+        },
+        "rect": {
+          "x": 20,
+          "y": 60,
+          "width": 16,
+          "height": 16
+        },
+        "selfId": "2654E0A1-6189-448F-932B-863578CD4189",
+        "smart": {
+          "nodeIdentification": {
+            "fieldBind": ["left"]
+          },
+          "nodeCustom": {
+            "fieldBind": {
+              "confidential": 0.9267116785049438,
+              "isConfident": true,
+              "label": "left",
+              "type": "fieldBind"
+            }
+          },
+          "layerProtocol": {
+            "field": {
+              "type": "left"
+            }
+          }
+        }
+      }, {
+        "componentName": "Text",
+        "id": "d2f68285-4128-11eb-ac8e-638777ab753e",
+        "props": {
+          "style": {
+            "maxWidth": "223px",
+            "height": "25px",
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "lineHeight": "25px",
+            "whiteSpace": "nowrap",
+            "color": "#333333",
+            "fontSize": "18px",
+            "fontWeight": 600
+          },
+          "text": "持仓详情",
+          "lines": 1,
+          "className": "txt"
+        },
+        "rect": {
+          "x": 152,
+          "y": 55,
+          "width": 72,
+          "height": 25
+        },
+        "selfId": "20F987C5-9FF8-4CC1-94D2-9C8A9FF74FAC0"
+      }]
+    }, {
+      "componentName": "Div",
+      "id": "d2f63461-4128-11eb-ac8e-638777ab753e",
+      "props": {
+        "style": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "position": "relative",
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": "8px",
           "borderRadius": "6px",
           "backgroundColor": "#FFFFFF",
+          "paddingRight": "20px",
+          "paddingLeft": "20px",
           "width": "351px",
-          "height": "182px"
+          "height": "70px"
         },
-        "className": "normal_div"
+        "className": "submain"
       },
       "rect": {
         "x": 12,
         "y": 98,
         "width": 351,
-        "height": 182
+        "height": 70
       },
-      "selfId": "A740A191-3F83-42A0-9CFF-C8257E73C28E",
+      "selfId": "DC94411F-4673-4422-B6B9-8BA4EAE5E692",
       "children": [{
         "componentName": "Div",
-        "id": "f0c9d091-7150-4946-827f-a2e5fadff284",
+        "id": "2811040a-aaf6-42c0-943e-598f12b8f3d0",
         "props": {
           "style": {
             "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "marginTop": "12px",
-            "width": "311px",
-            "height": "65px"
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "height": "43px"
           },
-          "className": "block_2"
+          "className": "normal_div_1"
         },
         "rect": {
           "x": 32,
-          "y": 110,
-          "width": 311,
-          "height": 65
+          "y": 112,
+          "width": 161,
+          "height": 43
         },
         "children": [{
-          "componentName": "Div",
-          "id": "e6adfd55-d104-4877-ab51-49bf26cf781d",
+          "componentName": "Text",
+          "id": "d2f60d56-4128-11eb-ac8e-638777ab753e",
           "props": {
             "style": {
-              "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "column",
-              "height": "65px"
+              "position": "relative",
+              "lineHeight": "22px",
+              "whiteSpace": "nowrap",
+              "color": "#333333",
+              "fontSize": "16px",
+              "fontWeight": 400
             },
-            "className": "block_3"
+            "text": "客商银行｜克悦存7天",
+            "lines": 1,
+            "className": "info"
           },
           "rect": {
             "x": 32,
-            "y": 110,
-            "width": 132,
-            "height": 65
+            "y": 112,
+            "width": 153,
+            "height": 22
           },
-          "children": [{
-            "componentName": "Div",
-            "id": "3d85ab31-30b9-4bf1-83b5-74aaa46981ed",
-            "props": {
-              "style": {
-                "display": "flex",
-                "position": "relative",
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": "24px"
-              },
-              "className": "container"
-            },
-            "rect": {
-              "x": 32,
-              "y": 110,
-              "width": 92,
-              "height": 24
-            },
-            "children": [{
-              "componentName": "Text",
-              "id": "0f6ef7c1-4128-11eb-9de5-3d78cb93be37",
-              "props": {
-                "style": {
-                  "marginRight": "2px",
-                  "lineHeight": "20px",
-                  "whiteSpace": "nowrap",
-                  "color": "#333333",
-                  "fontSize": "14px",
-                  "fontWeight": 500
-                },
-                "text": "总持仓(元)",
-                "lines": 1,
-                "className": "word"
-              },
-              "rect": {
-                "x": 32,
-                "y": 112,
-                "width": 66,
-                "height": 20
-              },
-              "selfId": "B1E8ABA3-7EA0-4668-8B92-8675D1CD112E0"
-            }, {
-              "componentName": "Image",
-              "selfId": "1EB999AB-6A97-4E6E-B26E-FC575FF9A772",
-              "id": "0f6ef7c0-4128-11eb-9de5-3d78cb93be37",
-              "props": {
-                "src": "https://img.alicdn.com/imgextra/i4/O1CN01FXJW5s1PtKNKvy4Eq_!!6000000001898-2-tps-48-48.png",
-                "style": {
-                  "width": "24px",
-                  "height": "24px"
-                },
-                "className": "icon_4"
-              },
-              "rect": {
-                "y": 110,
-                "x": 100,
-                "height": 24,
-                "width": 24
-              }
-            }]
-          }, {
-            "componentName": "Text",
-            "id": "0f6ed0b2-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "4px",
-                "lineHeight": "37px",
-                "whiteSpace": "nowrap",
-                "color": "#333333",
-                "fontSize": "26px",
-                "fontWeight": 500
-              },
-              "text": "200000.00",
-              "lines": 1,
-              "className": "count"
-            },
-            "rect": {
-              "x": 32,
-              "y": 138,
-              "width": 132,
-              "height": 37
-            },
-            "selfId": "5CF91770-7BEF-4933-8D29-2FA0BA00CAE30"
-          }]
+          "selfId": "59AAAD08-5AD7-4393-961E-49C35A26C0EB0"
         }, {
-          "componentName": "Div",
-          "id": "059c6ebc-be04-4883-991f-288252ba83ee",
+          "componentName": "Text",
+          "id": "d2f60d57-4128-11eb-ac8e-638777ab753e",
           "props": {
             "style": {
-              "display": "flex",
-              "alignItems": "center",
-              "flexDirection": "column",
-              "width": "56px",
-              "height": "46px"
+              "position": "relative",
+              "marginTop": "4px",
+              "lineHeight": "17px",
+              "whiteSpace": "pre",
+              "color": "#999999",
+              "fontSize": "12px",
+              "fontWeight": 400
             },
-            "className": "group_1"
+            "text": "7日年化利率4.875  有效期7天",
+            "lines": 1,
+            "className": "info_1"
           },
           "rect": {
-            "x": 287,
-            "y": 119,
-            "width": 56,
-            "height": 46
+            "x": 32,
+            "y": 138,
+            "width": 161,
+            "height": 17
           },
-          "children": [{
-            "componentName": "Div",
-            "id": "86a95bcd-84ab-4b87-86b5-b338af7e279d",
-            "props": {
-              "style": {
-                "display": "flex",
-                "position": "relative",
-                "alignItems": "flex-start",
-                "flexDirection": "row",
-                "width": "24px",
-                "height": "24px"
-              },
-              "className": "icon-searchWrap"
-            },
-            "rect": {
-              "y": 119,
-              "x": 303,
-              "height": 24,
-              "width": 24
-            },
-            "children": [{
-              "componentName": "Image",
-              "selfId": "27623670-B4A1-465A-A572-7522C5E68D98",
-              "id": "0f6ed0b1-4128-11eb-9de5-3d78cb93be37",
-              "props": {
-                "src": "https://img.alicdn.com/imgextra/i3/O1CN01gGtbar1JCpwDnKWHh_!!6000000000993-2-tps-48-48.png",
-                "style": {
-                  "position": "absolute",
-                  "top": "0px",
-                  "left": "0px",
-                  "width": "24px",
-                  "height": "24px"
-                },
-                "className": "search"
-              },
-              "rect": {
-                "y": 119,
-                "x": 303,
-                "height": 24,
-                "width": 24
-              },
-              "smart": {
-                "nodeIdentification": {
-                  "fieldBind": ["search"]
-                },
-                "nodeCustom": {
-                  "fieldBind": {
-                    "confidential": 0.9207465648651123,
-                    "isConfident": true,
-                    "label": "search",
-                    "type": "fieldBind"
-                  }
-                },
-                "layerProtocol": {
-                  "field": {
-                    "type": "search"
-                  }
-                }
-              }
-            }, {
-              "componentName": "Div",
-              "id": "0f6ea9a4-4128-11eb-9de5-3d78cb93be37",
-              "props": {
-                "style": {
-                  "position": "relative",
-                  "marginRight": "7px",
-                  "marginLeft": "11px",
-                  "backgroundColor": "#FFFFFF",
-                  "width": "2px",
-                  "height": "24px"
-                },
-                "className": "color"
-              },
-              "rect": {
-                "x": 314,
-                "y": 119,
-                "width": 2,
-                "height": 24
-              },
-              "selfId": "21F3D389-8AB3-42E1-A4EE-141AB8A82369"
-            }, {
-              "componentName": "Div",
-              "id": "0f6ea9a3-4128-11eb-9de5-3d78cb93be37",
-              "props": {
-                "style": {
-                  "position": "relative",
-                  "transform": "rotate(57.50000005594308deg)",
-                  "marginTop": "4px",
-                  "backgroundColor": "#FFFFFF",
-                  "width": "2px",
-                  "height": "6px"
-                },
-                "className": "colorDiv"
-              },
-              "rect": {
-                "x": 323,
-                "y": 123,
-                "width": 2,
-                "height": 6
-              },
-              "selfId": "DA8F4C97-6F28-4A96-8AEC-CA06BCDD6E25"
-            }]
-          }, {
-            "componentName": "Text",
-            "id": "0f6ea9a2-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "2px",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#666666",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "持仓分布",
-              "lines": 1,
-              "className": "txt_1"
-            },
-            "rect": {
-              "x": 287,
-              "y": 145,
-              "width": 56,
-              "height": 20
-            },
-            "selfId": "A34A4B85-3ABB-445A-A4F1-AB0759CEC6350"
-          }]
+          "selfId": "4DC85C59-C6E6-4DA9-9891-A4C61E238A5B0"
         }]
       }, {
         "componentName": "Div",
-        "id": "8b2b5145-17b0-4def-a755-2deb70be9a33",
+        "id": "d24d574e-1bde-492e-9be3-47dd2d5a584e",
         "props": {
           "style": {
             "display": "flex",
             "position": "relative",
             "alignItems": "center",
             "flexDirection": "row",
-            "marginTop": "15px",
-            "height": "20px"
+            "justifyContent": "center",
+            "width": "12px",
+            "height": "12px"
           },
-          "className": "block_4"
+          "className": "normal_div_2"
         },
         "rect": {
-          "x": 32,
-          "y": 190,
-          "width": 311,
-          "height": 20
+          "x": 331,
+          "y": 127,
+          "width": 12,
+          "height": 12
         },
         "children": [{
-          "componentName": "Div",
-          "id": "8b11e4dd-d76c-4647-b3ee-beec879bb8b8",
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginRight": "31px",
-              "height": "20px"
-            },
-            "className": "block_5"
-          },
-          "rect": {
-            "x": 32,
-            "y": 190,
-            "width": 104,
-            "height": 20
-          },
-          "children": [{
-            "componentName": "Text",
-            "id": "0f6ef7c5-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "marginRight": "4px",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "最新收益",
-              "lines": 1,
-              "className": "word_1"
-            },
-            "rect": {
-              "x": 32,
-              "y": 190,
-              "width": 56,
-              "height": 20
-            },
-            "selfId": "DECB1E15-CD41-4049-9733-FF82FBC01ECC0"
-          }, {
-            "componentName": "Text",
-            "id": "0f6ef7c4-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#ff4f01",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "129.00",
-              "lines": 1,
-              "className": "num"
-            },
-            "rect": {
-              "x": 92,
-              "y": 190,
-              "width": 44,
-              "height": 20
-            },
-            "selfId": "6069E8CF-1265-413D-AB2B-D218572773640"
-          }]
-        }, {
-          "componentName": "Div",
-          "id": "82bd283c-399d-4fff-aeee-b48c189093e3",
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginRight": "50px",
-              "height": "20px"
-            },
-            "className": "group_2"
-          },
-          "rect": {
-            "x": 167,
-            "y": 190,
-            "width": 114,
-            "height": 20
-          },
-          "children": [{
-            "componentName": "Text",
-            "id": "0f6ef7c3-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "marginRight": "4px",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "累计收益",
-              "lines": 1,
-              "className": "txt_2"
-            },
-            "rect": {
-              "x": 167,
-              "y": 190,
-              "width": 56,
-              "height": 20
-            },
-            "selfId": "7B829698-F3D2-426E-8ACA-2717041D8BF30"
-          }, {
-            "componentName": "Text",
-            "id": "0f6ef7c2-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#ff4f01",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "4705.45",
-              "lines": 1,
-              "className": "count_1"
-            },
-            "rect": {
-              "x": 227,
-              "y": 190,
-              "width": 54,
-              "height": 20
-            },
-            "selfId": "3B7539CF-5E15-45EC-B272-DC0EF5BFDC160"
-          }]
-        }, {
           "componentName": "Image",
-          "selfId": "E8879D7E-BBB9-4B28-AD2C-FD7F62340BF7",
-          "id": "0f6ea9a0-4128-11eb-9de5-3d78cb93be37",
+          "id": "d2f60d5a-4128-11eb-ac8e-638777ab753e",
           "props": {
-            "src": "https://img.alicdn.com/imgextra/i4/O1CN01aCHm9r1Jnw1JebFmk_!!6000000001074-2-tps-24-24.png",
             "style": {
+              "position": "absolute",
+              "top": "0px",
+              "left": "0px",
               "width": "12px",
               "height": "12px"
             },
-            "className": "right"
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/086d7320412811eb85fc971026c20990.png",
+            "className": "icon_4"
           },
           "rect": {
-            "y": 194,
             "x": 331,
-            "height": 12,
-            "width": 12
+            "y": 127,
+            "width": 12,
+            "height": 12
           },
+          "selfId": "7726A6BE-426E-4F22-B37C-4CB07CC5E235"
+        }, {
+          "componentName": "Image",
+          "id": "d2f60d59-4128-11eb-ac8e-638777ab753e",
+          "props": {
+            "style": {
+              "position": "absolute",
+              "top": "1px",
+              "left": "3px",
+              "width": "6px",
+              "height": "6px"
+            },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ce9af090412811eba38d2daf5f0ffb21.png",
+            "className": "play_1"
+          },
+          "rect": {
+            "x": 334,
+            "y": 128,
+            "width": 6,
+            "height": 6
+          },
+          "selfId": "23CC834E-C3FD-44F4-A240-C8455E698DC2",
           "smart": {
             "nodeIdentification": {
-              "fieldBind": ["right"]
+              "fieldBind": ["play"]
             },
             "nodeCustom": {
               "fieldBind": {
-                "confidential": 0.9962592124938965,
+                "confidential": 0.7454556822776794,
                 "isConfident": true,
-                "label": "right",
+                "label": "play",
                 "type": "fieldBind"
               }
             },
             "layerProtocol": {
               "field": {
-                "type": "right"
+                "type": "play"
               }
             }
           }
-        }]
-      }, {
-        "componentName": "Image",
-        "id": "0f6ea9a1-4128-11eb-9de5-3d78cb93be37",
-        "props": {
-          "style": {
-            "position": "relative",
-            "marginTop": "19px",
-            "width": "311px",
-            "height": "2px"
+        }, {
+          "componentName": "Image",
+          "id": "d2f60d58-4128-11eb-ac8e-638777ab753e",
+          "props": {
+            "style": {
+              "position": "relative",
+              "marginTop": "4px",
+              "width": "6px",
+              "height": "6px"
+            },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cebb97f0412811eb8641d1717db82130.png",
+            "className": "icon_5"
           },
-          "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/084e0440412811ebbc72f198aefd0bae.png",
-          "className": "bg"
+          "rect": {
+            "x": 334,
+            "y": 132,
+            "width": 6,
+            "height": 6
+          },
+          "selfId": "52EAF95A-F636-4747-A587-92D02E41DBA7"
+        }]
+      }]
+    }, {
+      "componentName": "Div",
+      "id": "d2f65b79-4128-11eb-ac8e-638777ab753e",
+      "props": {
+        "style": {
+          "display": "flex",
+          "position": "relative",
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginTop": "8px",
+          "borderRadius": "6px",
+          "backgroundColor": "#FFFFFF",
+          "width": "351px",
+          "height": "188px"
         },
-        "rect": {
-          "x": 32,
-          "y": 229,
-          "width": 311,
-          "height": 2
-        },
-        "selfId": "6ADDB170-7625-47BF-8028-EF4D10336C07"
-      }, {
+        "className": "main"
+      },
+      "rect": {
+        "x": 12,
+        "y": 176,
+        "width": 351,
+        "height": 188
+      },
+      "selfId": "EACEB6E7-D051-45B9-ACC2-5F251D577061",
+      "children": [{
         "componentName": "Div",
-        "id": "87559a88-2cb5-4468-b3fd-98537fbd7aa2",
+        "id": "d2f65b78-4128-11eb-ac8e-638777ab753e",
         "props": {
           "style": {
             "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginTop": "8px",
-            "height": "32px"
+            "alignItems": "flex-start",
+            "flexDirection": "column",
+            "marginTop": "-6px",
+            "borderRadius": "6px",
+            "backgroundColor": "#FFFFFF",
+            "width": "351px",
+            "height": "182px",
+            "overflow": "hidden"
           },
-          "className": "block_6"
+          "className": "normal_div_3"
         },
         "rect": {
-          "x": 58,
-          "y": 239,
-          "width": 255,
-          "height": 32
+          "x": 12,
+          "y": 176,
+          "width": 351,
+          "height": 182
         },
+        "selfId": "C53F2AA8-134C-48E5-82CD-D08B3E306EF6",
         "children": [{
           "componentName": "Div",
-          "id": "282f6509-37cc-4ac4-8e63-61d0e864d603",
+          "id": "5e8167e7-bac5-44b5-b069-bf0fe6500d08",
           "props": {
             "style": {
               "display": "flex",
-              "alignItems": "center",
+              "position": "relative",
+              "alignItems": "flex-start",
               "flexDirection": "row",
-              "marginRight": "49px",
-              "height": "20px"
+              "marginLeft": "20px",
+              "height": "77px"
             },
-            "className": "block_7"
+            "className": "block_1"
           },
           "rect": {
-            "x": 58,
-            "y": 245,
-            "width": 80,
-            "height": 20
+            "x": 32,
+            "y": 176,
+            "width": 331,
+            "height": 77
           },
           "children": [{
             "componentName": "Div",
-            "id": "0f6e8290-4128-11eb-9de5-3d78cb93be37",
+            "id": "db8ec2fe-60ad-4e18-9549-b9f8d9af7cae",
             "props": {
               "style": {
                 "display": "flex",
                 "alignItems": "center",
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "marginRight": "4px",
-                "width": "20px",
-                "height": "20px"
+                "flexDirection": "column",
+                "marginTop": "12px",
+                "marginRight": "40px",
+                "width": "108px",
+                "height": "65px"
               },
-              "className": "group_3"
+              "className": "group"
             },
             "rect": {
-              "x": 58,
-              "y": 245,
-              "width": 20,
-              "height": 20
+              "x": 32,
+              "y": 188,
+              "width": 108,
+              "height": 65
             },
-            "selfId": "B7659762-890D-49D2-B493-2FCA2B903ACD",
             "children": [{
               "componentName": "Div",
-              "id": "0f6e5b85-4128-11eb-9de5-3d78cb93be37",
+              "id": "f481cd1a-78b3-463f-be28-069ff73f7907",
               "props": {
                 "style": {
                   "display": "flex",
+                  "position": "relative",
                   "alignItems": "center",
                   "flexDirection": "row",
-                  "justifyContent": "center",
-                  "borderStyle": "solid",
-                  "borderColor": "rgba(51,51,51,0.2)",
-                  "width": "20px",
-                  "height": "20px",
-                  "overflow": "hidden"
+                  "height": "24px"
                 },
-                "className": "outer"
+                "className": "container"
               },
               "rect": {
-                "x": 58,
-                "y": 245,
-                "width": 20,
-                "height": 20
+                "x": 32,
+                "y": 188,
+                "width": 106,
+                "height": 24
               },
-              "selfId": "B7C62E6B-805B-48B6-A622-F441E1DBB136",
               "children": [{
+                "componentName": "Text",
+                "id": "d2f6346b-4128-11eb-ac8e-638777ab753e",
+                "props": {
+                  "style": {
+                    "marginRight": "2px",
+                    "lineHeight": "20px",
+                    "whiteSpace": "nowrap",
+                    "color": "#333333",
+                    "fontSize": "14px",
+                    "fontWeight": 500
+                  },
+                  "text": "持仓金额(元)",
+                  "lines": 1,
+                  "className": "txt_1"
+                },
+                "rect": {
+                  "x": 32,
+                  "y": 190,
+                  "width": 80,
+                  "height": 20
+                },
+                "selfId": "06BE1D19-4A93-46F5-B490-69061B68A6AF0"
+              }, {
                 "componentName": "Div",
-                "id": "71ae8104-bda4-4930-9f2d-b8b89e426520",
+                "id": "3759ebcc-4d11-4406-a66b-dee32afdf94d",
                 "props": {
                   "style": {
                     "display": "flex",
@@ -888,153 +670,363 @@ const data ={
                     "alignItems": "center",
                     "flexDirection": "row",
                     "justifyContent": "center",
-                    "width": "20px",
-                    "height": "20px"
+                    "width": "24px",
+                    "height": "24px"
                   },
-                  "className": "icon-minusWrap"
+                  "className": "normal_div_4"
                 },
                 "rect": {
-                  "y": 245,
-                  "x": 58,
-                  "height": 20,
-                  "width": 20
+                  "x": 114,
+                  "y": 188,
+                  "width": 24,
+                  "height": 24
                 },
                 "children": [{
                   "componentName": "Image",
-                  "selfId": "20120B07-0B32-4540-8E49-E1E0749EE8F8",
-                  "id": "0f6e5b84-4128-11eb-9de5-3d78cb93be37",
+                  "id": "d2f6346a-4128-11eb-ac8e-638777ab753e",
                   "props": {
-                    "src": "https://img.alicdn.com/imgextra/i2/O1CN01LbSMgj25hc6sVNnpk_!!6000000007558-2-tps-40-40.png",
                     "style": {
                       "position": "absolute",
                       "top": "0px",
                       "left": "0px",
-                      "width": "20px",
-                      "height": "20px"
+                      "width": "24px",
+                      "height": "24px"
                     },
-                    "className": "minus"
+                    "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/78914b50412711eb800a3d3b7ce76349.png",
+                    "className": "icon_6"
                   },
                   "rect": {
-                    "y": 245,
-                    "x": 58,
-                    "height": 20,
-                    "width": 20
+                    "x": 114,
+                    "y": 188,
+                    "width": 24,
+                    "height": 24
                   },
-                  "smart": {
-                    "nodeIdentification": {
-                      "fieldBind": ["minus"]
-                    },
-                    "nodeCustom": {
-                      "fieldBind": {
-                        "confidential": 0.9641215801239014,
-                        "isConfident": true,
-                        "label": "minus",
-                        "type": "fieldBind"
-                      }
-                    },
-                    "layerProtocol": {
-                      "field": {
-                        "type": "minus"
-                      }
-                    }
-                  }
+                  "selfId": "6888822E-CAEF-4E53-9EAC-263B3E76C6DB"
                 }, {
                   "componentName": "Div",
-                  "id": "0f6e5b83-4128-11eb-9de5-3d78cb93be37",
+                  "id": "acc98f0f-0cfa-4d7a-9f3e-09ec68bbaae8",
                   "props": {
                     "style": {
+                      "display": "flex",
                       "position": "relative",
-                      "borderWidth": "1px",
-                      "borderStyle": "solid",
-                      "borderRadius": "1.5px",
-                      "borderColor": "#666666",
-                      "width": "16px",
-                      "height": "12px"
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "width": "20px",
+                      "height": "14px"
                     },
-                    "className": "empty"
+                    "className": "normal_div_5"
                   },
                   "rect": {
-                    "x": 60,
-                    "y": 250,
-                    "width": 16,
-                    "height": 12
+                    "x": 116,
+                    "y": 193,
+                    "width": 20,
+                    "height": 14
                   },
-                  "selfId": "107A788C-9718-48BA-B3D1-80A1593320F7"
+                  "children": [{
+                    "componentName": "Image",
+                    "id": "d2f63469-4128-11eb-ac8e-638777ab753e",
+                    "props": {
+                      "style": {
+                        "position": "absolute",
+                        "top": "0px",
+                        "left": "0px",
+                        "width": "20px",
+                        "height": "14px"
+                      },
+                      "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/07c99200412811eb8afe4fa1530a6ea4.png",
+                      "className": "icon_7"
+                    },
+                    "rect": {
+                      "x": 116,
+                      "y": 193,
+                      "width": 20,
+                      "height": 14
+                    },
+                    "selfId": "4F073398-03A2-4CED-9C6D-A05CECCD9363"
+                  }, {
+                    "componentName": "Image",
+                    "id": "d2f63468-4128-11eb-ac8e-638777ab753e",
+                    "props": {
+                      "style": {
+                        "position": "relative",
+                        "width": "6px",
+                        "height": "6px"
+                      },
+                      "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/791c4d40412711ebb7a0db033ae5beeb.png",
+                      "className": "icon_8"
+                    },
+                    "rect": {
+                      "x": 123,
+                      "y": 197,
+                      "width": 6,
+                      "height": 6
+                    },
+                    "selfId": "952B0FEB-8713-469E-8ACB-A521DCFB2B20"
+                  }]
                 }]
               }]
-            }]
-          }, {
-            "componentName": "Text",
-            "id": "0f6e5b81-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#666666",
-                "fontSize": "14px",
-                "fontWeight": 400
+            }, {
+              "componentName": "Text",
+              "id": "d2f63467-4128-11eb-ac8e-638777ab753e",
+              "props": {
+                "style": {
+                  "position": "relative",
+                  "marginTop": "4px",
+                  "lineHeight": "37px",
+                  "whiteSpace": "nowrap",
+                  "color": "#333333",
+                  "fontSize": "26px",
+                  "fontWeight": 500
+                },
+                "text": "17727.28",
+                "lines": 1,
+                "className": "count"
               },
-              "text": "电子账户",
-              "lines": 1,
-              "className": "text"
-            },
-            "rect": {
-              "x": 82,
-              "y": 245,
-              "width": 56,
-              "height": 20
-            },
-            "selfId": "3D8419A5-C54A-416D-A534-3F724437DA220"
-          }],
-          "smart": {
-            "layerProtocol": {
-              "repeat": {
-                "type": "repeat",
-                "repeatId": "1608292595647168",
-                "repeatIndex": "0"
+              "rect": {
+                "x": 32,
+                "y": 216,
+                "width": 108,
+                "height": 37
+              },
+              "selfId": "BAAA5C44-0964-4051-9EAD-251A05CA1D5C0"
+            }],
+            "smart": {
+              "layerProtocol": {
+                "repeat": {
+                  "type": "repeat",
+                  "repeatId": "1608292919314542",
+                  "repeatIndex": "0"
+                },
+                "multiStatus": {
+                  "type": "multiStatus",
+                  "protocol": {
+                    "autoDetected": true,
+                    "statusId": "16082929193242887",
+                    "statusIndex": 0,
+                    "statusCount": 2
+                  }
+                }
               }
             }
-          }
-        }, {
-          "componentName": "Image",
-          "id": "0f6ef7c6-4128-11eb-9de5-3d78cb93be37",
-          "props": {
-            "style": {
-              "marginRight": "44px",
-              "width": "2px",
-              "height": "32px"
-            },
-            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/07abd0d0412811ebab8229b761bcab29.png",
-            "className": "verticalLine"
-          },
-          "rect": {
-            "x": 187,
-            "y": 239,
-            "width": 2,
-            "height": 32
-          },
-          "selfId": "9692AFDF-B703-4888-B280-130995AB7846"
-        }, {
-          "componentName": "Div",
-          "id": "193ec3aa-c3e5-44cd-bf93-df7131ae4750",
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "center",
-              "flexDirection": "row",
-              "height": "20px"
-            },
-            "className": "block_8"
-          },
-          "rect": {
-            "x": 233,
-            "y": 245,
-            "width": 80,
-            "height": 20
-          },
-          "children": [{
+          }, {
             "componentName": "Div",
-            "id": "623dca98-69f8-46ef-872d-2ed3ac510225",
+            "id": "a42a83da-63d8-47fe-8947-4b6a42745242",
+            "props": {
+              "style": {
+                "display": "flex",
+                "alignItems": "flex-start",
+                "flexDirection": "column",
+                "marginTop": "12px",
+                "marginRight": "12px",
+                "height": "65px"
+              },
+              "className": "group_1"
+            },
+            "rect": {
+              "x": 180,
+              "y": 188,
+              "width": 106,
+              "height": 65
+            },
+            "children": [{
+              "componentName": "Div",
+              "id": "1b89c5f6-dcd2-47eb-b600-b7fbd4d95dc9",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "position": "relative",
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "height": "24px"
+                },
+                "className": "container_1"
+              },
+              "rect": {
+                "x": 180,
+                "y": 188,
+                "width": 106,
+                "height": 24
+              },
+              "children": [{
+                "componentName": "Text",
+                "id": "d2f63466-4128-11eb-ac8e-638777ab753e",
+                "props": {
+                  "style": {
+                    "marginRight": "2px",
+                    "lineHeight": "20px",
+                    "whiteSpace": "nowrap",
+                    "color": "#333333",
+                    "fontSize": "14px",
+                    "fontWeight": 500
+                  },
+                  "text": "当前收益(元)",
+                  "lines": 1,
+                  "className": "txt_2"
+                },
+                "rect": {
+                  "x": 180,
+                  "y": 190,
+                  "width": 80,
+                  "height": 20
+                },
+                "selfId": "1C6AA39D-EB37-4A0A-9A76-BC7F3976DCEC0"
+              }, {
+                "componentName": "Div",
+                "id": "57aee5bc-ebbf-41b5-9a91-be3664845238",
+                "props": {
+                  "style": {
+                    "display": "flex",
+                    "position": "relative",
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                    "width": "24px",
+                    "height": "24px"
+                  },
+                  "className": "normal_div_6"
+                },
+                "rect": {
+                  "x": 262,
+                  "y": 188,
+                  "width": 24,
+                  "height": 24
+                },
+                "children": [{
+                  "componentName": "Image",
+                  "id": "d2f63465-4128-11eb-ac8e-638777ab753e",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "top": "0px",
+                      "left": "0px",
+                      "width": "24px",
+                      "height": "24px"
+                    },
+                    "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/78914b50412711eb800a3d3b7ce76349.png",
+                    "className": "icon_9"
+                  },
+                  "rect": {
+                    "x": 262,
+                    "y": 188,
+                    "width": 24,
+                    "height": 24
+                  },
+                  "selfId": "53A5CABC-6430-4EF0-A6B6-C8798D10A65F"
+                }, {
+                  "componentName": "Div",
+                  "id": "a18a2baa-4b4d-46a7-b766-b6bc47a36675",
+                  "props": {
+                    "style": {
+                      "display": "flex",
+                      "position": "relative",
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "width": "20px",
+                      "height": "14px"
+                    },
+                    "className": "normal_div_7"
+                  },
+                  "rect": {
+                    "x": 264,
+                    "y": 193,
+                    "width": 20,
+                    "height": 14
+                  },
+                  "children": [{
+                    "componentName": "Image",
+                    "id": "d2f63464-4128-11eb-ac8e-638777ab753e",
+                    "props": {
+                      "style": {
+                        "position": "absolute",
+                        "top": "0px",
+                        "left": "0px",
+                        "width": "20px",
+                        "height": "14px"
+                      },
+                      "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/07c99200412811eb8afe4fa1530a6ea4.png",
+                      "className": "icon_10"
+                    },
+                    "rect": {
+                      "x": 264,
+                      "y": 193,
+                      "width": 20,
+                      "height": 14
+                    },
+                    "selfId": "513E4DB2-665F-4AB2-91FF-F86A9819EDC3"
+                  }, {
+                    "componentName": "Image",
+                    "id": "d2f63463-4128-11eb-ac8e-638777ab753e",
+                    "props": {
+                      "style": {
+                        "position": "relative",
+                        "width": "6px",
+                        "height": "6px"
+                      },
+                      "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/791c4d40412711ebb7a0db033ae5beeb.png",
+                      "className": "icon_11"
+                    },
+                    "rect": {
+                      "x": 271,
+                      "y": 197,
+                      "width": 6,
+                      "height": 6
+                    },
+                    "selfId": "1F0144DA-E9DB-47ED-9455-ADBBC398DBBA"
+                  }]
+                }]
+              }]
+            }, {
+              "componentName": "Text",
+              "id": "d2f63462-4128-11eb-ac8e-638777ab753e",
+              "props": {
+                "style": {
+                  "position": "relative",
+                  "marginTop": "4px",
+                  "maxWidth": "94px",
+                  "height": "37px",
+                  "overflow": "hidden",
+                  "textOverflow": "ellipsis",
+                  "lineHeight": "37px",
+                  "whiteSpace": "nowrap",
+                  "color": "#ff4f01",
+                  "fontSize": "26px",
+                  "fontWeight": 500
+                },
+                "text": "668.98",
+                "lines": 1,
+                "className": "count_1"
+              },
+              "rect": {
+                "x": 180,
+                "y": 216,
+                "width": 86,
+                "height": 37
+              },
+              "selfId": "C8CB1C14-49DB-41DA-8036-20A3312E72CB0"
+            }],
+            "smart": {
+              "layerProtocol": {
+                "repeat": {
+                  "type": "repeat",
+                  "repeatId": "1608292919314542",
+                  "repeatIndex": "1"
+                },
+                "multiStatus": {
+                  "type": "multiStatus",
+                  "protocol": {
+                    "autoDetected": true,
+                    "statusId": "16082929193242887",
+                    "statusIndex": 1,
+                    "statusCount": 2
+                  }
+                }
+              }
+            }
+          }, {
+            "componentName": "Div",
+            "id": "27118008-4dbb-4419-b2ca-6f9b6eb1e18e",
             "props": {
               "style": {
                 "display": "flex",
@@ -1042,65 +1034,226 @@ const data ={
                 "alignItems": "center",
                 "flexDirection": "row",
                 "justifyContent": "center",
-                "marginRight": "4px",
-                "width": "20px",
-                "height": "20px"
+                "width": "65px",
+                "height": "25px"
               },
-              "className": "group_4"
+              "className": "markWrap"
             },
             "rect": {
-              "y": 245,
-              "x": 233,
-              "height": 20,
-              "width": 20
+              "x": 298,
+              "y": 176,
+              "width": 65,
+              "height": 25
             },
             "children": [{
               "componentName": "Image",
-              "selfId": "E75E23C3-168C-409C-8DCA-9D4FE64517DC",
-              "id": "0f6e5b80-4128-11eb-9de5-3d78cb93be37",
+              "id": "d2f65b70-4128-11eb-ac8e-638777ab753e",
               "props": {
-                "src": "https://img.alicdn.com/imgextra/i2/O1CN01nC22KM1PE6jRGbwjE_!!6000000001808-2-tps-40-40.png",
                 "style": {
                   "position": "absolute",
                   "top": "0px",
                   "left": "0px",
-                  "width": "20px",
-                  "height": "20px"
+                  "width": "65px",
+                  "height": "25px"
                 },
-                "className": "outer_1"
+                "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ce765190412811eb8afe4fa1530a6ea4.png",
+                "className": "mark"
               },
               "rect": {
-                "y": 245,
-                "x": 233,
-                "height": 20,
-                "width": 20
-              }
+                "x": 298,
+                "y": 176,
+                "width": 65,
+                "height": 25
+              },
+              "selfId": "9651B392-C6C7-4CCC-A294-3F51E27192CF"
             }, {
-              "componentName": "Div",
-              "id": "0f6e3477-4128-11eb-9de5-3d78cb93be37",
+              "componentName": "Text",
+              "id": "d2f6346c-4128-11eb-ac8e-638777ab753e",
               "props": {
                 "style": {
                   "position": "relative",
-                  "borderWidth": "1px",
-                  "borderStyle": "solid",
-                  "borderRadius": "1.5px",
-                  "borderColor": "#666666",
-                  "width": "13px",
-                  "height": "15px"
+                  "lineHeight": "20px",
+                  "whiteSpace": "nowrap",
+                  "color": "#ffffff",
+                  "fontSize": "14px",
+                  "fontWeight": 500
                 },
-                "className": "div"
+                "text": "计息中",
+                "lines": 1,
+                "className": "word"
               },
               "rect": {
-                "x": 237,
-                "y": 248,
-                "width": 13,
-                "height": 15
+                "x": 310,
+                "y": 178,
+                "width": 42,
+                "height": 20
               },
-              "selfId": "F04C80B4-CD1A-4C1A-8859-58D95BF8F4CC"
+              "selfId": "5C382458-24F7-43BE-A5DF-496ABEDE1EBE0"
             }]
+          }]
+        }, {
+          "componentName": "Image",
+          "id": "d2f65b71-4128-11eb-ac8e-638777ab753e",
+          "props": {
+            "style": {
+              "position": "relative",
+              "alignSelf": "center",
+              "marginTop": "10px",
+              "width": "311px",
+              "height": "2px"
+            },
+            "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/084e0440412811ebbc72f198aefd0bae.png",
+            "className": "bg"
+          },
+          "rect": {
+            "x": 32,
+            "y": 263,
+            "width": 311,
+            "height": 2
+          },
+          "selfId": "CA10415E-B87B-4054-BB23-928916C0CE10"
+        }, {
+          "componentName": "Div",
+          "id": "14743637-11b5-4f2d-853f-62a8c09d8d15",
+          "props": {
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "alignItems": "flex-start",
+              "alignSelf": "center",
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+              "marginTop": "11px",
+              "width": "311px",
+              "height": "48px"
+            },
+            "className": "block_2"
+          },
+          "rect": {
+            "x": 32,
+            "y": 276,
+            "width": 311,
+            "height": 48
+          },
+          "children": [{
+            "componentName": "Text",
+            "id": "d2f65b77-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "marginRight": "173px",
+                "marginBottom": "8px",
+                "lineHeight": "20px",
+                "whiteSpace": "nowrap",
+                "color": "#666666",
+                "fontSize": "14px",
+                "fontWeight": 400
+              },
+              "text": "到期日期",
+              "lines": 1,
+              "className": "text"
+            },
+            "rect": {
+              "x": 32,
+              "y": 276,
+              "width": 56,
+              "height": 20
+            },
+            "selfId": "31AFA5E8-0220-4CCD-94FD-9C20260946420"
           }, {
             "componentName": "Text",
-            "id": "0f6e3476-4128-11eb-9de5-3d78cb93be37",
+            "id": "d2f65b76-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "marginBottom": "8px",
+                "lineHeight": "20px",
+                "whiteSpace": "nowrap",
+                "color": "#333333",
+                "fontSize": "14px",
+                "fontWeight": 400
+              },
+              "text": "2021-02-02",
+              "lines": 1,
+              "className": "txt_3"
+            },
+            "rect": {
+              "x": 261,
+              "y": 276,
+              "width": 82,
+              "height": 20
+            },
+            "selfId": "C51B1742-697C-4FD3-B153-E410D60102530"
+          }, {
+            "componentName": "Text",
+            "id": "d2f65b75-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "marginRight": "173px",
+                "lineHeight": "20px",
+                "whiteSpace": "nowrap",
+                "color": "#666666",
+                "fontSize": "14px",
+                "fontWeight": 400
+              },
+              "text": "计息日期",
+              "lines": 1,
+              "className": "word_1"
+            },
+            "rect": {
+              "x": 32,
+              "y": 304,
+              "width": 56,
+              "height": 20
+            },
+            "selfId": "A5334727-5D4F-4C00-86D2-9DF3BE0ED6ED0"
+          }, {
+            "componentName": "Text",
+            "id": "d2f65b74-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "lineHeight": "20px",
+                "whiteSpace": "nowrap",
+                "color": "#333333",
+                "fontSize": "14px",
+                "fontWeight": 400
+              },
+              "text": "2021-02-02",
+              "lines": 1,
+              "className": "text_1"
+            },
+            "rect": {
+              "x": 261,
+              "y": 304,
+              "width": 82,
+              "height": 20
+            },
+            "selfId": "59C96E94-79B3-4CE7-906C-9B90AB5672590"
+          }]
+        }, {
+          "componentName": "Div",
+          "id": "bc6e9cf6-03d4-4dc2-94e4-3a59035d9691",
+          "props": {
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "alignItems": "center",
+              "alignSelf": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginTop": "8px",
+              "width": "311px",
+              "height": "20px"
+            },
+            "className": "block_3"
+          },
+          "rect": {
+            "x": 32,
+            "y": 332,
+            "width": 311,
+            "height": 20
+          },
+          "children": [{
+            "componentName": "Text",
+            "id": "d2f65b73-4128-11eb-ac8e-638777ab753e",
             "props": {
               "style": {
                 "lineHeight": "20px",
@@ -1109,145 +1262,113 @@ const data ={
                 "fontSize": "14px",
                 "fontWeight": 400
               },
-              "text": "交易明细",
+              "text": "预计到期收益",
               "lines": 1,
-              "className": "text_1"
+              "className": "info_2"
             },
             "rect": {
-              "x": 257,
-              "y": 245,
-              "width": 56,
+              "x": 32,
+              "y": 332,
+              "width": 84,
               "height": 20
             },
-            "selfId": "EC23A6E4-61DF-4091-A3BA-533688DBF5A80"
-          }],
-          "smart": {
-            "layerProtocol": {
-              "repeat": {
-                "type": "repeat",
-                "repeatId": "1608292595647168",
-                "repeatIndex": "1"
-              }
-            }
-          }
+            "selfId": "B0AB3759-92B2-4746-B656-1FE8DEE948220"
+          }, {
+            "componentName": "Text",
+            "id": "d2f65b72-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "lineHeight": "20px",
+                "whiteSpace": "nowrap",
+                "color": "#333333",
+                "fontSize": "14px",
+                "fontWeight": 500
+              },
+              "text": "2300.34",
+              "lines": 1,
+              "className": "count_2"
+            },
+            "rect": {
+              "x": 288,
+              "y": 332,
+              "width": 55,
+              "height": 20
+            },
+            "selfId": "15A3D474-9677-4F6F-BA46-D37EF6B549880"
+          }]
         }]
       }]
     }, {
-      "componentName": "Text",
-      "id": "0f6f1ed0-4128-11eb-9de5-3d78cb93be37",
-      "props": {
-        "style": {
-          "position": "relative",
-          "marginTop": "138px",
-          "marginLeft": "12px",
-          "maxWidth": "363px",
-          "height": "25px",
-          "overflow": "hidden",
-          "textOverflow": "ellipsis",
-          "lineHeight": "25px",
-          "whiteSpace": "nowrap",
-          "color": "#333333",
-          "fontSize": "18px",
-          "fontWeight": 500
-        },
-        "text": "持有产品",
-        "lines": 1,
-        "className": "word_2"
-      },
-      "rect": {
-        "x": 12,
-        "y": 304,
-        "width": 72,
-        "height": 25
-      },
-      "selfId": "CFDA8CCE-A1F3-4E94-8486-707E91B46AC20"
-    }, {
       "componentName": "Div",
-      "id": "0f6e3475-4128-11eb-9de5-3d78cb93be37",
+      "id": "d2f63460-4128-11eb-ac8e-638777ab753e",
       "props": {
         "style": {
           "display": "flex",
           "position": "relative",
-          "alignItems": "flex-start",
-          "alignSelf": "center",
+          "alignItems": "center",
           "flexDirection": "column",
-          "marginTop": "12px",
+          "marginTop": "8px",
           "borderRadius": "6px",
           "backgroundColor": "#FFFFFF",
           "width": "351px",
-          "height": "240px"
+          "height": "107px"
         },
-        "className": "bd"
+        "className": "row"
       },
       "rect": {
         "x": 12,
-        "y": 341,
+        "y": 372,
         "width": 351,
-        "height": 240
+        "height": 107
       },
-      "selfId": "5CE545CF-F343-49E4-8ED2-04C051251416",
+      "selfId": "B6058172-3EE0-4540-B445-CDE1DFCFA34E",
       "children": [{
         "componentName": "Div",
-        "id": "ae1b02c6-7213-429c-bf68-87a714aecc13",
+        "id": "62e6f6cf-3def-4e01-bd0e-ef3d0e924070",
         "props": {
           "style": {
             "display": "flex",
             "position": "relative",
             "alignItems": "center",
             "flexDirection": "row",
-            "marginTop": "10px",
-            "marginLeft": "20px",
-            "height": "21px"
+            "justifyContent": "space-between",
+            "marginTop": "14px",
+            "width": "311px",
+            "height": "22px"
           },
-          "className": "block_9"
+          "className": "normal_div_8"
         },
         "rect": {
           "x": 32,
-          "y": 351,
-          "width": 108,
-          "height": 21
+          "y": 386,
+          "width": 311,
+          "height": 22
         },
         "children": [{
-          "componentName": "Image",
-          "selfId": "0A031364-E6C9-45CE-89C4-51F7C53D211A",
-          "id": "0f6de651-4128-11eb-9de5-3d78cb93be37",
+          "componentName": "Text",
+          "id": "d2f60d5c-4128-11eb-ac8e-638777ab753e",
           "props": {
-            "src": "https://img.alicdn.com/imgextra/i4/O1CN01DDMd7d1dP0mXUpkhA_!!6000000003727-2-tps-40-40.png",
             "style": {
-              "marginRight": "4px",
-              "width": "20px",
-              "height": "20px",
-              "overflow": "hidden"
+              "lineHeight": "22px",
+              "whiteSpace": "nowrap",
+              "color": "#333333",
+              "fontSize": "16px",
+              "fontWeight": 500
             },
-            "className": "email"
+            "text": "回款方式",
+            "lines": 1,
+            "className": "text_2"
           },
           "rect": {
-            "y": 351,
             "x": 32,
-            "height": 20,
-            "width": 20
+            "y": 386,
+            "width": 64,
+            "height": 22
           },
-          "smart": {
-            "nodeIdentification": {
-              "fieldBind": ["email"]
-            },
-            "nodeCustom": {
-              "fieldBind": {
-                "confidential": 0.675952136516571,
-                "isConfident": true,
-                "label": "email",
-                "type": "fieldBind"
-              }
-            },
-            "layerProtocol": {
-              "field": {
-                "type": "email"
-              }
-            }
-          }
+          "selfId": "5FD90122-D297-4875-B28F-1A04802757FB0"
         }, {
           "componentName": "Text",
-          "id": "0f6dbf41-4128-11eb-9de5-3d78cb93be37",
+          "id": "d2f60d5b-4128-11eb-ac8e-638777ab753e",
           "props": {
             "style": {
               "lineHeight": "20px",
@@ -1256,692 +1377,398 @@ const data ={
               "fontSize": "14px",
               "fontWeight": 400
             },
-            "text": "梅洲客商银行",
-            "lines": 1,
-            "className": "info"
-          },
-          "rect": {
-            "x": 56,
-            "y": 352,
-            "width": 84,
-            "height": 20
-          },
-          "selfId": "E0F6FFD8-BC26-4D73-906C-418AFE998DE20"
-        }]
-      }, {
-        "componentName": "Image",
-        "id": "0f6de652-4128-11eb-9de5-3d78cb93be37",
-        "props": {
-          "style": {
-            "position": "relative",
-            "alignSelf": "center",
-            "marginTop": "8px",
-            "width": "319px",
-            "height": "2px"
-          },
-          "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/7b855e00412711ebb3b9a38faca3ed5e.png",
-          "className": "bg_1"
-        },
-        "rect": {
-          "x": 28,
-          "y": 380,
-          "width": 319,
-          "height": 2
-        },
-        "selfId": "2FC039C0-C4FE-4B37-A174-5D1894B2C794"
-      }, {
-        "componentName": "Div",
-        "id": "b8e5bc1c-12ff-4394-b7f7-0409f8ce9591",
-        "props": {
-          "style": {
-            "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginTop": "11px",
-            "marginLeft": "20px",
-            "height": "20px"
-          },
-          "className": "block_10"
-        },
-        "rect": {
-          "x": 32,
-          "y": 393,
-          "width": 239,
-          "height": 20
-        },
-        "children": [{
-          "componentName": "Text",
-          "id": "0f6e3474-4128-11eb-9de5-3d78cb93be37",
-          "props": {
-            "style": {
-              "marginRight": "4px",
-              "lineHeight": "20px",
-              "whiteSpace": "nowrap",
-              "color": "#333333",
-              "fontSize": "14px",
-              "fontWeight": 500
-            },
-            "text": "克悦存7天",
-            "lines": 1,
-            "className": "txt_3"
-          },
-          "rect": {
-            "x": 32,
-            "y": 393,
-            "width": 64,
-            "height": 20
-          },
-          "selfId": "6FB4B956-AA79-4793-AE54-B814F50321AC0"
-        }, {
-          "componentName": "Text",
-          "id": "0f6e3473-4128-11eb-9de5-3d78cb93be37",
-          "props": {
-            "style": {
-              "lineHeight": "17px",
-              "whiteSpace": "nowrap",
-              "color": "#999999",
-              "fontSize": "12px",
-              "fontWeight": 400
-            },
-            "text": "50元起购｜当日计息｜随存随期",
+            "text": "提前支取或到期自动兑付",
             "lines": 1,
             "className": "desc"
           },
           "rect": {
-            "x": 100,
-            "y": 395,
-            "width": 171,
-            "height": 17
+            "x": 189,
+            "y": 387,
+            "width": 154,
+            "height": 20
           },
-          "selfId": "7E521865-C7DA-4571-98A3-6ED796C872340"
+          "selfId": "5ED74F66-3ADC-4E8C-8232-3B937402D1900"
         }]
       }, {
         "componentName": "Div",
-        "id": "cb4fb207-53fd-43eb-867a-db75c06dbe8d",
+        "id": "d2f60d54-4128-11eb-ac8e-638777ab753e",
         "props": {
           "style": {
             "display": "flex",
             "position": "relative",
-            "alignItems": "center",
-            "alignSelf": "center",
+            "alignItems": "flex-start",
             "flexDirection": "row",
-            "marginTop": "12px",
-            "width": "310px",
-            "height": "44px"
+            "marginTop": "9px",
+            "borderRadius": "6px",
+            "backgroundColor": "#F7F7F7",
+            "width": "327px",
+            "height": "50px"
           },
-          "className": "block_11"
+          "className": "normal_div_9"
         },
         "rect": {
-          "x": 32,
-          "y": 425,
-          "width": 310,
+          "x": 24,
+          "y": 417,
+          "width": 327,
+          "height": 50
+        },
+        "selfId": "06B94CA6-F3C4-4E8D-BD28-5C405FFD844C",
+        "children": [{
+          "componentName": "Div",
+          "id": "25dd1a65-d2f1-48b5-a03f-a7d6d3c4eff1",
+          "props": {
+            "style": {
+              "display": "flex",
+              "position": "relative",
+              "alignItems": "center",
+              "flexDirection": "column",
+              "marginTop": "10px",
+              "marginRight": "4px",
+              "marginLeft": "8px",
+              "width": "14px",
+              "height": "14px"
+            },
+            "className": "block_4"
+          },
+          "rect": {
+            "x": 32,
+            "y": 427,
+            "width": 14,
+            "height": 14
+          },
+          "children": [{
+            "componentName": "Image",
+            "id": "d2f60d53-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "position": "absolute",
+                "top": "0px",
+                "alignSelf": "center",
+                "width": "14px",
+                "height": "14px"
+              },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cede3b20412811eb82cd6fdab32f0b1e.png",
+              "className": "icon_12"
+            },
+            "rect": {
+              "x": 32,
+              "y": 427,
+              "width": 14,
+              "height": 14
+            },
+            "selfId": "55DCD342-9C63-458C-8936-9D0FA9B69451"
+          }, {
+            "componentName": "Image",
+            "id": "d2f60d51-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "position": "relative",
+                "marginTop": "3px",
+                "width": "2px",
+                "height": "3px"
+              },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cf034f50412811eba762692959aa6713.png",
+              "className": "dot_1"
+            },
+            "rect": {
+              "x": 38,
+              "y": 430,
+              "width": 2,
+              "height": 3
+            },
+            "selfId": "F4508165-845A-4600-B46D-022EC9C88B01"
+          }, {
+            "componentName": "Div",
+            "id": "d2f60d52-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "position": "relative",
+                "marginTop": "1px",
+                "borderRadius": "0.75px",
+                "backgroundColor": "#999999",
+                "width": "1px",
+                "height": "4px"
+              },
+              "className": "color"
+            },
+            "rect": {
+              "x": 39,
+              "y": 434,
+              "width": 1,
+              "height": 4
+            },
+            "selfId": "E8C3548E-2D95-4E59-8465-04CC57087406"
+          }]
+        }, {
+          "componentName": "Text",
+          "id": "d2f60d50-4128-11eb-ac8e-638777ab753e",
+          "props": {
+            "style": {
+              "WebkitLineClamp": "2px",
+              "marginTop": "8px",
+              "width": "288px",
+              "height": "34px",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "lineHeight": "17px",
+              "color": "#666666",
+              "fontSize": "12px",
+              "fontWeight": 400
+            },
+            "text": "本产品回款由银行负责完成，资金将返还至您的银行电子账户，实际到账时间以银行处理时间为准",
+            "lines": 2,
+            "className": "summary"
+          },
+          "rect": {
+            "x": 50,
+            "y": 425,
+            "width": 288,
+            "height": 34
+          },
+          "selfId": "6BBFAE8D-EF12-4F88-A679-CB88339A3B660"
+        }]
+      }]
+    }, {
+      "componentName": "Div",
+      "id": "d2f60d55-4128-11eb-ac8e-638777ab753e",
+      "props": {
+        "style": {
+          "display": "flex",
+          "position": "relative",
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginTop": "261px",
+          "borderStyle": "solid",
+          "borderColor": "#E5E5E5",
+          "backgroundColor": "#FFFFFF",
+          "width": "375px",
+          "height": "72px"
+        },
+        "className": "ft"
+      },
+      "rect": {
+        "x": 0,
+        "y": 740,
+        "width": 375,
+        "height": 72
+      },
+      "selfId": "F2C07952-6AB0-401B-9862-A578E693C5A9",
+      "children": [{
+        "componentName": "Div",
+        "id": "5c203527-24fc-453e-91bd-252f21a37f82",
+        "props": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "flexDirection": "column",
+            "marginTop": "4px",
+            "marginRight": "55px",
+            "marginLeft": "20px",
+            "width": "28px",
+            "height": "44px"
+          },
+          "className": "normal_div_10"
+        },
+        "rect": {
+          "x": 20,
+          "y": 756,
+          "width": 28,
           "height": 44
         },
         "children": [{
           "componentName": "Div",
-          "id": "83d59ded-49cc-41dd-bcd4-ef8561ed7105",
+          "id": "e85daccb-a9ae-4882-8154-6961dd3cc64a",
           "props": {
             "style": {
               "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "column",
-              "marginRight": "46px",
-              "height": "44px"
-            },
-            "className": "block_12"
-          },
-          "rect": {
-            "x": 32,
-            "y": 425,
-            "width": 89,
-            "height": 44
-          },
-          "children": [{
-            "componentName": "Text",
-            "id": "0f6e3472-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "持仓金额(元）",
-              "lines": 1,
-              "className": "text_2"
-            },
-            "rect": {
-              "x": 32,
-              "y": 425,
-              "width": 89,
-              "height": 20
-            },
-            "selfId": "F5A6F891-D770-4255-9FE8-62F87F8256500"
-          }, {
-            "componentName": "Text",
-            "id": "0f6e3471-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "2px",
-                "maxWidth": "77px",
-                "height": "22px",
-                "overflow": "hidden",
-                "textOverflow": "ellipsis",
-                "lineHeight": "22px",
-                "whiteSpace": "nowrap",
-                "color": "#333333",
-                "fontSize": "16px",
-                "fontWeight": 500
-              },
-              "text": "20.00",
-              "lines": 1,
-              "className": "num_1"
-            },
-            "rect": {
-              "x": 32,
-              "y": 447,
-              "width": 43,
-              "height": 22
-            },
-            "selfId": "A4E40AE4-852A-485D-B5DE-101F029CD7460"
-          }]
-        }, {
-          "componentName": "Div",
-          "id": "53a2fbf6-8977-47f2-9bf1-967c8d3f562a",
-          "props": {
-            "style": {
-              "display": "flex",
+              "position": "relative",
               "alignItems": "center",
-              "flexDirection": "column",
-              "marginRight": "49px",
-              "width": "56px",
-              "height": "44px"
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "width": "24px",
+              "height": "24px"
             },
-            "className": "group_5"
+            "className": "block_5"
           },
           "rect": {
-            "x": 167,
-            "y": 425,
-            "width": 56,
-            "height": 44
+            "x": 22,
+            "y": 756,
+            "width": 24,
+            "height": 24
           },
           "children": [{
-            "componentName": "Text",
-            "id": "0f6e0d67-4128-11eb-9de5-3d78cb93be37",
+            "componentName": "Image",
+            "id": "d2f5e643-4128-11eb-ac8e-638777ab753e",
             "props": {
               "style": {
-                "position": "relative",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
+                "position": "absolute",
+                "top": "0px",
+                "left": "0px",
+                "width": "24px",
+                "height": "24px"
               },
-              "text": "今日收益",
-              "lines": 1,
-              "className": "word_3"
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/78914b50412711eb800a3d3b7ce76349.png",
+              "className": "icon_13"
             },
             "rect": {
-              "x": 167,
-              "y": 425,
-              "width": 56,
+              "x": 22,
+              "y": 756,
+              "width": 24,
+              "height": 24
+            },
+            "selfId": "BE88142F-4D84-4970-BF21-A18FF3527FDB"
+          }, {
+            "componentName": "Div",
+            "id": "d2f5e642-4128-11eb-ac8e-638777ab753e",
+            "props": {
+              "style": {
+                "display": "flex",
+                "position": "relative",
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "borderWidth": "1px",
+                "borderStyle": "solid",
+                "borderRadius": "10px",
+                "borderColor": "#999999",
+                "width": "20px",
+                "height": "20px"
+              },
+              "className": "block_6"
+            },
+            "rect": {
+              "x": 24,
+              "y": 758,
+              "width": 20,
               "height": 20
             },
-            "selfId": "52F5B568-0851-4365-AD5F-D129962851310"
-          }, {
-            "componentName": "Text",
-            "id": "0f6e0d66-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "2px",
-                "lineHeight": "22px",
-                "whiteSpace": "nowrap",
-                "color": "#ff4f01",
-                "fontSize": "16px",
-                "fontWeight": 500
+            "selfId": "F42A6019-5649-422E-810C-0274254D2D4D",
+            "children": [{
+              "componentName": "Image",
+              "id": "d2f5e641-4128-11eb-ac8e-638777ab753e",
+              "props": {
+                "style": {
+                  "width": "12px",
+                  "height": "12px"
+                },
+                "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/cf204d30412811ebbc5141dac41db9f7.png",
+                "className": "icon_14"
               },
-              "text": "10.00",
-              "lines": 1,
-              "className": "count_2"
-            },
-            "rect": {
-              "x": 175,
-              "y": 447,
-              "width": 40,
-              "height": 22
-            },
-            "selfId": "E0A29F95-3678-4631-A930-05D5315DFA430"
+              "rect": {
+                "x": 28,
+                "y": 762,
+                "width": 12,
+                "height": 12
+              },
+              "selfId": "C06A9F4C-23FF-42EC-97FB-798051FE22A5"
+            }]
           }]
         }, {
-          "componentName": "Div",
-          "id": "7bbcc375-116c-4eae-9d09-ead858a19697",
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "column",
-              "height": "44px"
-            },
-            "className": "block_13"
-          },
-          "rect": {
-            "x": 272,
-            "y": 425,
-            "width": 70,
-            "height": 44
-          },
-          "children": [{
-            "componentName": "Text",
-            "id": "0f6e3470-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "距离返息日",
-              "lines": 1,
-              "className": "txt_4"
-            },
-            "rect": {
-              "x": 272,
-              "y": 425,
-              "width": 70,
-              "height": 20
-            },
-            "selfId": "A42935E6-7DEB-4377-ADAE-D0643D27D8D30"
-          }, {
-            "componentName": "Text",
-            "id": "0f6e0d68-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "2px",
-                "marginLeft": "44px",
-                "lineHeight": "22px",
-                "whiteSpace": "nowrap",
-                "color": "#333333",
-                "fontSize": "16px",
-                "fontWeight": 500
-              },
-              "text": "3天",
-              "lines": 1,
-              "className": "word_4"
-            },
-            "rect": {
-              "x": 316,
-              "y": 447,
-              "width": 26,
-              "height": 22
-            },
-            "selfId": "92B4B914-0E33-49CE-BD00-CFD7EF05C0660"
-          }]
-        }],
-        "smart": {
-          "layerProtocol": {
-            "repeat": {
-              "type": "repeat",
-              "repeatId": "1608292595647611",
-              "repeatIndex": "0"
-            }
-          }
-        }
-      }, {
-        "componentName": "Image",
-        "id": "0f6e0d65-4128-11eb-9de5-3d78cb93be37",
-        "props": {
-          "style": {
-            "position": "relative",
-            "alignSelf": "center",
-            "marginTop": "11px",
-            "width": "319px",
-            "height": "2px"
-          },
-          "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/7b855e00412711ebb3b9a38faca3ed5e.png",
-          "className": "bg_2"
-        },
-        "rect": {
-          "x": 28,
-          "y": 480,
-          "width": 319,
-          "height": 2
-        },
-        "selfId": "2022CBD1-7EBD-4CEE-A92F-8E8F2880CC08"
-      }, {
-        "componentName": "Div",
-        "id": "4025aac3-cefa-4375-9a3d-01e38f98d40f",
-        "props": {
-          "style": {
-            "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginTop": "11px",
-            "marginLeft": "20px",
-            "height": "20px"
-          },
-          "className": "block_14"
-        },
-        "rect": {
-          "x": 32,
-          "y": 493,
-          "width": 240,
-          "height": 20
-        },
-        "children": [{
           "componentName": "Text",
-          "id": "0f6e0d64-4128-11eb-9de5-3d78cb93be37",
+          "id": "d2f5e644-4128-11eb-ac8e-638777ab753e",
           "props": {
             "style": {
-              "marginRight": "4px",
+              "position": "relative",
               "lineHeight": "20px",
               "whiteSpace": "nowrap",
-              "color": "#333333",
+              "color": "#666666",
               "fontSize": "14px",
-              "fontWeight": 500
+              "fontWeight": 400
             },
-            "text": "克悦存3天",
+            "text": "客服",
             "lines": 1,
             "className": "text_3"
           },
           "rect": {
-            "x": 32,
-            "y": 493,
-            "width": 65,
+            "x": 20,
+            "y": 780,
+            "width": 28,
             "height": 20
           },
-          "selfId": "77E0D5DC-7BC9-43E8-820A-887CF17B64430"
-        }, {
-          "componentName": "Text",
-          "id": "0f6e0d63-4128-11eb-9de5-3d78cb93be37",
-          "props": {
-            "style": {
-              "lineHeight": "17px",
-              "whiteSpace": "nowrap",
-              "color": "#999999",
-              "fontSize": "12px",
-              "fontWeight": 400
-            },
-            "text": "50元起购｜当日计息｜随存随期",
-            "lines": 1,
-            "className": "desc_1"
-          },
-          "rect": {
-            "x": 101,
-            "y": 495,
-            "width": 171,
-            "height": 17
-          },
-          "selfId": "D783CBF5-58FE-4DF5-AE55-978944B542E30"
+          "selfId": "42CCF34C-7F9B-49FE-97D2-DF7F066393CD0"
         }]
       }, {
+        "componentName": "Text",
+        "id": "d2f5e645-4128-11eb-ac8e-638777ab753e",
+        "props": {
+          "style": {
+            "marginRight": "44px",
+            "maxWidth": "116px",
+            "height": "25px",
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "lineHeight": "25px",
+            "whiteSpace": "nowrap",
+            "color": "#333333",
+            "fontSize": "18px",
+            "fontWeight": 500
+          },
+          "text": "立即存入",
+          "lines": 1,
+          "className": "txt_4"
+        },
+        "rect": {
+          "x": 103,
+          "y": 763,
+          "width": 72,
+          "height": 25
+        },
+        "selfId": "9E709793-33F2-4ECD-B0DE-9231E41CB22C0"
+      }, {
         "componentName": "Div",
-        "id": "d76c7415-e490-4bc1-a99f-30a88cd6651f",
+        "id": "d2f5e647-4128-11eb-ac8e-638777ab753e",
         "props": {
           "style": {
             "display": "flex",
-            "position": "relative",
             "alignItems": "center",
-            "alignSelf": "center",
             "flexDirection": "row",
-            "marginTop": "12px",
-            "width": "310px",
-            "height": "44px"
+            "justifyContent": "center",
+            "borderRadius": "24px",
+            "backgroundColor": "#FDC123",
+            "width": "144px",
+            "height": "48px"
           },
-          "className": "block_15"
+          "className": "tagWrap"
         },
         "rect": {
-          "x": 32,
-          "y": 525,
-          "width": 310,
-          "height": 44
+          "x": 219,
+          "y": 752,
+          "width": 144,
+          "height": 48
         },
+        "selfId": "2DA31E5E-9176-4BFF-9475-C1F14E4110DB",
         "children": [{
-          "componentName": "Div",
-          "id": "ff4beed3-5d60-4397-b74c-56d7710e8225",
+          "componentName": "Text",
+          "id": "d2f5e646-4128-11eb-ac8e-638777ab753e",
           "props": {
             "style": {
-              "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "column",
-              "marginRight": "46px",
-              "height": "44px"
+              "maxWidth": "132px",
+              "height": "25px",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "lineHeight": "25px",
+              "whiteSpace": "nowrap",
+              "color": "#333333",
+              "fontSize": "18px",
+              "fontWeight": 500
             },
-            "className": "block_16"
+            "text": "提前取出",
+            "lines": 1,
+            "className": "tag"
           },
           "rect": {
-            "x": 32,
-            "y": 525,
-            "width": 89,
-            "height": 44
+            "x": 255,
+            "y": 763,
+            "width": 72,
+            "height": 25
           },
-          "children": [{
-            "componentName": "Text",
-            "id": "0f6e0d62-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "持仓金额(元）",
-              "lines": 1,
-              "className": "text_4"
-            },
-            "rect": {
-              "x": 32,
-              "y": 525,
-              "width": 89,
-              "height": 20
-            },
-            "selfId": "8BBFD2AF-F078-4500-B731-186E624BB1720"
-          }, {
-            "componentName": "Text",
-            "id": "0f6e0d61-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "2px",
-                "lineHeight": "22px",
-                "whiteSpace": "nowrap",
-                "color": "#333333",
-                "fontSize": "16px",
-                "fontWeight": 500
-              },
-              "text": "200000.00",
-              "lines": 1,
-              "className": "num_2"
-            },
-            "rect": {
-              "x": 32,
-              "y": 547,
-              "width": 82,
-              "height": 22
-            },
-            "selfId": "67B58DBC-7B31-4E86-9EA8-11F0A2F3DBE60"
-          }]
-        }, {
-          "componentName": "Div",
-          "id": "a89fb5b9-5e61-4711-8a42-84ee5267f5c9",
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "center",
-              "flexDirection": "column",
-              "marginRight": "49px",
-              "width": "56px",
-              "height": "44px"
-            },
-            "className": "group_6"
-          },
-          "rect": {
-            "x": 167,
-            "y": 525,
-            "width": 56,
-            "height": 44
-          },
-          "children": [{
-            "componentName": "Text",
-            "id": "0f6de655-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "今日收益",
-              "lines": 1,
-              "className": "word_5"
-            },
-            "rect": {
-              "x": 167,
-              "y": 525,
-              "width": 56,
-              "height": 20
-            },
-            "selfId": "F372ACF6-324F-43D0-89AD-9E068256C1220"
-          }, {
-            "componentName": "Text",
-            "id": "0f6de654-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "2px",
-                "lineHeight": "22px",
-                "whiteSpace": "nowrap",
-                "color": "#333333",
-                "fontSize": "16px",
-                "fontWeight": 500
-              },
-              "text": "0.00",
-              "lines": 1,
-              "className": "count_3"
-            },
-            "rect": {
-              "x": 178,
-              "y": 547,
-              "width": 34,
-              "height": 22
-            },
-            "selfId": "A2869286-A95F-4DBD-87BB-88B597A732EB0"
-          }]
-        }, {
-          "componentName": "Div",
-          "id": "431cc8c8-a214-49ab-8408-2e874b3a69ab",
-          "props": {
-            "style": {
-              "display": "flex",
-              "alignItems": "flex-start",
-              "flexDirection": "column",
-              "height": "44px"
-            },
-            "className": "block_17"
-          },
-          "rect": {
-            "x": 272,
-            "y": 525,
-            "width": 70,
-            "height": 44
-          },
-          "children": [{
-            "componentName": "Text",
-            "id": "0f6e0d60-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "lineHeight": "20px",
-                "whiteSpace": "nowrap",
-                "color": "#999999",
-                "fontSize": "14px",
-                "fontWeight": 400
-              },
-              "text": "距离返息日",
-              "lines": 1,
-              "className": "txt_5"
-            },
-            "rect": {
-              "x": 272,
-              "y": 525,
-              "width": 70,
-              "height": 20
-            },
-            "selfId": "2D2C6D61-E270-4562-93F7-F2A189D63EB00"
-          }, {
-            "componentName": "Text",
-            "id": "0f6de656-4128-11eb-9de5-3d78cb93be37",
-            "props": {
-              "style": {
-                "position": "relative",
-                "marginTop": "2px",
-                "marginLeft": "44px",
-                "lineHeight": "22px",
-                "whiteSpace": "nowrap",
-                "color": "#333333",
-                "fontSize": "16px",
-                "fontWeight": 500
-              },
-              "text": "3天",
-              "lines": 1,
-              "className": "word_6"
-            },
-            "rect": {
-              "x": 316,
-              "y": 547,
-              "width": 26,
-              "height": 22
-            },
-            "selfId": "2E1E41B5-F011-43C6-811B-43E714EC09C00"
-          }]
-        }],
-        "smart": {
-          "layerProtocol": {
-            "repeat": {
-              "type": "repeat",
-              "repeatId": "1608292595647611",
-              "repeatIndex": "1"
-            }
-          }
-        }
-      }, {
-        "componentName": "Image",
-        "id": "0f6de653-4128-11eb-9de5-3d78cb93be37",
-        "props": {
-          "style": {
-            "position": "relative",
-            "alignSelf": "center",
-            "marginTop": "11px",
-            "width": "319px",
-            "height": "1px"
-          },
-          "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/0967d8b0412811ebb7a0db033ae5beeb.png",
-          "className": "bg_3"
-        },
-        "rect": {
-          "x": 28,
-          "y": 580,
-          "width": 319,
-          "height": 1
-        },
-        "selfId": "53D9F0A6-1A81-495C-8F88-6DD27E5A11C1"
+          "selfId": "0ED76533-F86A-476E-906B-0C16B58D06B80"
+        }]
       }]
     }]
   }],
   "imgcook": {
-    "restore_id": "f61655c7-3854-4311-b379-5083e1ad6778"
+    "restore_id": "34cb383e-1cf3-4764-9fac-7bfd3c017dc4"
   }
 }
 

@@ -480,6 +480,7 @@ module.exports = function(schema, option) {
             export default {
               data() {
                 return {
+                  screenHeight: 750 / weex.config.env.deviceWidth * weex.config.env.deviceHeight - 42,
                   ${datas.join(',\n')}
                 } 
               },
@@ -494,7 +495,7 @@ module.exports = function(schema, option) {
               ${lifeCycles.join(',\n')}
             }
           </script>
-          <style>
+          <style scoped>
           ${styles4upx.join('\n')}
           </style>
         `,
