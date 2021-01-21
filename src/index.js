@@ -60,7 +60,7 @@ module.exports = function(schema, option) {
   ];
 
   // no unit style
-  const noUnitStyles = [ 'opacity', 'fontWeight' ];
+  const noUnitStyles = [ 'opacity', 'fontWeight','lines' ];
 
   const lifeCycleMap = {
     _constructor: 'created',
@@ -170,8 +170,10 @@ module.exports = function(schema, option) {
     if (typeof value === 'string') {
       if (isExpression(value)) {
         if (isReactNode) {
-          return `{{${value.slice(7, -2)}}}`;
+          value = value.slice(7, -2).replace(/^state./g,'')
+          return `{{${value}}}`;
         } else {
+          console.log(value.slice(2, -2));
           return value.slice(2, -2);
         }
       }
@@ -191,7 +193,13 @@ module.exports = function(schema, option) {
       const { params, content, name } = parseFunction(value);
       expressionName[name] = expressionName[name] ? expressionName[name] + 1 : 1;
       methods.push(`${name}_${expressionName[name]}(${params}) {${content}}`);
-      return `${name}_${expressionName[name]}`;
+      console.log(typeof params);
+      let code = `${name}_${expressionName[name]}`;
+      if (params.trim() && params.trim() != 'e') {
+        code += `(${params.trim()})`
+      }
+      // console.log(code);
+      return `"${code}"`;
     } else {
       return `"${value}"`;
     }
@@ -208,58 +216,36 @@ module.exports = function(schema, option) {
   // parse async dataSource
   const parseDataSource = (data) => {
     const name = data.id;
-    const { uri, method, params } = data.options;
-    const action = data.type;
-    let payload = {};
-
-    switch (action) {
-      case 'fetch':
-        if (imports.indexOf(`import {fetch} from whatwg-fetch`) === -1) {
-          imports.push(`import {fetch} from 'whatwg-fetch'`);
-        }
-        payload = {
-          method: method
-        };
-
-        break;
-      case 'jsonp':
-        if (imports.indexOf(`import {fetchJsonp} from fetch-jsonp`) === -1) {
-          imports.push(`import jsonp from 'fetch-jsonp'`);
-        }
-        break;
+    const { uri, method, params , isTianbeiSchema ,needLogin} = data.options;
+    let action = method.toLowerCase();
+    if (isTianbeiSchema) {
+      action = 'postRPC'
     }
-
-    Object.keys(data.options).forEach((key) => {
-      if ([ 'uri', 'method', 'params' ].indexOf(key) === -1) {
-        payload[key] = toString(data.options[key]);
-      }
-    });
-
     // params parse should in string template
     if (params) {
-      payload = `${toString(payload).slice(0, -1)} ,body: ${isExpression(params)
+      payload = `${isExpression(params)
           ? parseProps(params)
-          : toString(params)}}`;
+          : toString(params)}`;
     } else {
       payload = toString(payload);
     }
 
     let result = `{
-      ${action}(${parseProps(uri)}, ${toString(payload)})
-        .then((response) => response.json())
+      api.${action}(${parseProps(uri)}, ${toString(payload)}
     `;
 
     if (data.dataHandler) {
       const { params, content } = parseFunction(data.dataHandler);
-      result += `.then((${params}) => {${content}})
-        .catch((e) => {
-          console.log('error', e);
-        })
+      result += `,(${params}) => {${content}},fail=>{toast.showToast('服务暂不可用，请稍后再试');console.log(fail)});
       `;
     }
-
-    result += '}';
-
+    else{
+      result += ',res=>{},fail=>{});'
+    }
+    result += '}'
+    if (needLogin) {
+      result = `{util.isLogin(login=>{if(login)${result}else{if (this.goLogin) {navigator.pop({ animated: true }, null);return;}else{this.goLogin = true}util.toLogin(()=>{})}})}`
+    }
     return `${name}() ${result}`;
   };
 
@@ -267,6 +253,7 @@ module.exports = function(schema, option) {
   const parseCondition = (condition, render) => {
     let _condition = isExpression(condition) ? condition.slice(2, -2) : condition;
     if (typeof _condition === 'string') {
+      _condition = _condition.replace('this.state.', '');
       _condition = _condition.replace('this.', '');
     }
     render = render.replace(/^<\w+\s/, `${render.match(/^<\w+\s/)[0]} v-if="${_condition}" `);
@@ -334,8 +321,11 @@ module.exports = function(schema, option) {
     let props = '';
 
     Object.keys(schema.props).forEach((key) => {
-      if ([ 'className', 'style', 'text', 'src', 'lines' ].indexOf(key) === -1) {
+      if ([ 'className', 'style', 'text', 'src', 'lines','viewappear','viewdisappear' ].indexOf(key) === -1) {
         props += ` ${parsePropsKey(key, schema.props[key])}=${parseProps(schema.props[key])}`;
+      }
+      if(['viewappear','viewdisappear'].indexOf(key) !== -1){
+        props += ` @${key}=${parseProps(schema.props[key])}`;
       }
     });
     switch (type) {
@@ -394,6 +384,8 @@ module.exports = function(schema, option) {
       if ([ 'page', 'block', 'component' ].indexOf(type) !== -1) {
         // 容器组件处理: state/method/dataSource/lifeCycle/render
         const init = [];
+        init.push('globalEvent.addEventListener("back_pressed", () => {navigator.pop({animated:true}, null);});')
+        init.push('util.setStatusBarColor("black", "transparent", 100);')
 
         if (schema.state) {
           datas.push(`${toString(schema.state).slice(1, -1)}`);
@@ -469,14 +461,13 @@ module.exports = function(schema, option) {
         panelValue: prettier.format(
             `
           <template>
-          <div>
           ${template.join("")}
-          </div>
           </template>
           <script>
             ${imports.join('\n')}
-            let globalEvent = weex.requireModule('globalEvent');
-            let navigator = weex.requireModule('navigator');
+            import { api,toast,dialog,util,user,stat_service } from '@ymt-modules'
+            const globalEvent = weex.requireModule('globalEvent');
+            const navigator = weex.requireModule('navigator');
             export default {
               data() {
                 return {
@@ -484,11 +475,6 @@ module.exports = function(schema, option) {
                   ${datas.join(',\n')}
                 } 
               },
-              created() {
-    globalEvent.addEventListener("back_pressed", () => {
-      navigator.pop({animated:true}, null);
-    });
-  },
               methods: {
                 ${methods.join(',\n')}
               },
